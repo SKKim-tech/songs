@@ -4,13 +4,21 @@
     <title>My Favorite Singers!</title>
     <meta charset="utf-8" />
     <style>
+      #article{
+        padding-left: 20px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+      }
       body {
         margin: 0;
       }
-      ol {
+      #grid ol {
         border-right: 1px gray solid;
         margin: 0;
         padding: 20px;
+        padding-left: 35px;
         width: 250px;
       }
       a {
@@ -42,33 +50,37 @@
   </head>
   <body>
     <h1><a href="index.html">Favorite singers list</a></h1>
-    <ol>
-      <li><a href="pr1.html" id="active">아이유(IU)</a></li>
-      <li><a href="pr2.html">태연(Taeyeon)</a></li>
-      <li><a href="pr3.html">정은지(Jeong Eunji)</a></li>
-      <li><a href="pr4.html">홍진영(Hong Jinyoung)</a></li>
-    </ol>
-    <h2>
-      <a
-        href="https://namu.wiki/w/%EC%95%84%EC%9D%B4%EC%9C%A0"
-        target="_blank"
-        title="IU-namuwiki"
-        >IU</a
-      >
-    </h2>
-    <p>
-      <a>
-        <img src="IU.jpeg" width="30%">
-      </a>
-    </p>
-    <p>
-        <h3>Songs</h3>
-        <ul>
-          <li><a>좋은날 - 2010</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/jeqdYqsrsA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>금요일에 만나요 - 2013</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/EiVmQZwJhsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a >밤편지 - 2017</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/BzYnNdJhZQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>Blueming - 2019</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/D1PvIWdJ8xo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-        </ul>
-    </p>
+    <div id="grid">
+      <ol>
+        <li><a href="pr1.html" id="active">아이유(IU)</a></li>
+        <li><a href="pr2.html">태연(Taeyeon)</a></li>
+        <li><a href="pr3.html">정은지(Jeong Eunji)</a></li>
+        <li><a href="pr4.html">홍진영(Hong Jinyoung)</a></li>
+      </ol>
+      <div id="article">
+        <h2>
+          <a
+            href="https://namu.wiki/w/%EC%95%84%EC%9D%B4%EC%9C%A0"
+            target="_blank"
+            title="IU-namuwiki"
+            >IU</a
+          >
+        </h2>
+        <p>
+          <a>
+            <img src="IU.jpeg" width="30%">
+          </a>
+        </p>
+        <p>
+            <h3>Songs</h3>
+            <ul>
+              <li><a>좋은날 - 2010</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/jeqdYqsrsA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>금요일에 만나요 - 2013</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/EiVmQZwJhsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a >밤편지 - 2017</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/BzYnNdJhZQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>Blueming - 2019</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/D1PvIWdJ8xo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            </ul>
+        </p>
+      </div>
+    </div>
   </body>
 </html>

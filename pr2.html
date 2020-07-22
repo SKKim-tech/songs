@@ -4,14 +4,21 @@
     <title>My Favorite Singers!</title>
     <meta charset="utf-8" />
     <style>
-    <style>
+      #article{
+        padding-left: 20px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+      }
       body {
         margin: 0;
       }
-      ol {
+      #grid ol {
         border-right: 1px gray solid;
         margin: 0;
         padding: 20px;
+        padding-left: 35px;
         width: 250px;
       }
       a {
@@ -43,31 +50,35 @@
   </head>
   <body>
     <h1><a href="index.html">Favorite singers list</a></h1>
-    <ol>
-      <li><a href="pr1.html">아이유(IU)</a></li>
-      <li><a href="pr2.html" id="active">태연(Taeyeon)</a></li>
-      <li><a href="pr3.html">정은지(Jeong Eunji)</a></li>
-      <li><a href="pr4.html">홍진영(Hong Jinyoung)</a></li>
-    </ol>
-    <h2>
-      <a
-        href="https://namu.wiki/w/%ED%83%9C%EC%97%B0"
-        target="_blank"
-        title="태연-namuwiki"
-        >태연</a
-      >
-    </h2>
-    <p>
-      <img src="taeyeon.jpeg" width="30%">
-    </p>
-    <p>
-        <h3>Songs</h3>
-        <ul>
-          <li><a>U R - 2015</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/55M1C9jybAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>I - 2015</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/4OrCA1OInoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>Fine - 2017</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/NHXUM-6a3dU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>사계 - 2019</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/4HG_CJzyX6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-        </ul>
-    </p>
+    <div id="grid">
+      <ol>
+        <li><a href="pr1.html">아이유(IU)</a></li>
+        <li><a href="pr2.html" id="active">태연(Taeyeon)</a></li>
+        <li><a href="pr3.html">정은지(Jeong Eunji)</a></li>
+        <li><a href="pr4.html">홍진영(Hong Jinyoung)</a></li>
+      </ol>
+      <div id="article">
+        <h2>
+          <a
+            href="https://namu.wiki/w/%ED%83%9C%EC%97%B0"
+            target="_blank"
+            title="태연-namuwiki"
+            >태연</a
+          >
+        </h2>
+        <p>
+          <img src="taeyeon.jpeg" width="30%">
+        </p>
+        <p>
+            <h3>Songs</h3>
+            <ul>
+              <li><a>U R - 2015</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/55M1C9jybAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>I - 2015</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/4OrCA1OInoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>Fine - 2017</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/NHXUM-6a3dU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>사계 - 2019</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/4HG_CJzyX6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            </ul>
+        </p>
+      </div>
+    </div>
   </body>
 </html>

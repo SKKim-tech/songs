@@ -4,13 +4,21 @@
     <title>My Favorite Singers!</title>
     <meta charset="utf-8" />
     <style>
+      #article{
+        padding-left: 20px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+      }
       body {
         margin: 0;
       }
-      ol {
+      #grid ol {
         border-right: 1px gray solid;
         margin: 0;
         padding: 20px;
+        padding-left: 35px;
         width: 250px;
       }
       a {
@@ -42,31 +50,35 @@
   </head>
   <body>
     <h1><a href="index.html">Favorite singers list</a></h1>
-    <ol>
-      <li><a href="pr1.html">아이유(IU)</a></li>
-      <li><a href="pr2.html">태연(Taeyeon)</a></li>
-      <li><a href="pr3.html">정은지(Jeong Eunji)</a></li>
-      <li><a href="pr4.html" id="active">홍진영(Hong Jinyoung)</a></li>
-    </ol>
-    <h2>
-      <a
-        href="https://namu.wiki/w/%ED%99%8D%EC%A7%84%EC%98%81"
-        target="_blank"
-        title="홍진영-namuwiki"
-        >홍진영</a
-      >
-    </h2>
-    <p>
-      <img src="hong.jpeg" width="30%">
-    </p>
-    <p>
-        <h3>Songs</h3>
-        <ul>
-          <li><a>사랑의 배터리 - 2009</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/0-1rdQXHadw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>산다는건 - 2014</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/RYV1s0ylNFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>월량대표아적심 - 2016</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/yQxB1M0VZLU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>오늘 밤에 - 2019</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/5zONW_hyI5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-        </ul>
-    </p>
+    <div id="grid">
+      <ol>
+        <li><a href="pr1.html">아이유(IU)</a></li>
+        <li><a href="pr2.html">태연(Taeyeon)</a></li>
+        <li><a href="pr3.html">정은지(Jeong Eunji)</a></li>
+        <li><a href="pr4.html" id="active">홍진영(Hong Jinyoung)</a></li>
+      </ol>
+      <div id="article">
+        <h2>
+          <a
+            href="https://namu.wiki/w/%ED%99%8D%EC%A7%84%EC%98%81"
+            target="_blank"
+            title="홍진영-namuwiki"
+            >홍진영</a
+          >
+        </h2>
+        <p>
+          <img src="hong.jpeg" width="30%">
+        </p>
+        <p>
+            <h3>Songs</h3>
+            <ul>
+              <li><a>사랑의 배터리 - 2009</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/0-1rdQXHadw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>산다는건 - 2014</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/RYV1s0ylNFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>월량대표아적심 - 2016</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/yQxB1M0VZLU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>오늘 밤에 - 2019</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/5zONW_hyI5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            </ul>
+        </p>
+      </div>
+    </div>
   </body>
 </html>

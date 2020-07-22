@@ -4,13 +4,21 @@
     <title>My Favorite Singers!</title>
     <meta charset="utf-8" />
     <style>
+      #grid{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+      }
+      #article{
+        padding-left: 20px;
+      }
       body {
         margin: 0;
       }
-      ol {
+      #grid ol {
         border-right: 1px gray solid;
         margin: 0;
         padding: 20px;
+        padding-left: 35px;
         width: 250px;
       }
       a {
@@ -42,31 +50,35 @@
   </head>
   <body>
     <h1><a href="index.html">Favorite singers list</a></h1>
-    <ol>
-      <li><a href="pr1.html">아이유(IU)</a></li>
-      <li><a href="pr2.html">태연(Taeyeon)</a></li>
-      <li><a href="pr3.html" id="active">정은지(Jeong Eunji)</a></li>
-      <li><a href="pr4.html">홍진영(Hong Jinyoung)</a></li>
-    </ol>
-    <h2>
-      <a
-        href="https://namu.wiki/w/%EC%A0%95%EC%9D%80%EC%A7%80"
-        target="_blank"
-        title="정은지-namuwiki"
-        >정은지</a
-      >
-    </h2>
-    <p>
-      <img src="jeoneunji.jpeg" width="30%">
-    </p>
-    <p>
-        <h3>Songs</h3>
-        <ul>
-          <li><a>하늘바라기 - 2016</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/nzDO6tAB6ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>너란봄 - 2017</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/PWDISJZr7Yc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>어떤가요 - 2018</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/pfQfMpFGA80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-          <li><a>이제 그만 싸우자 - 2014</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/BIbTM4bZHUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-        </ul>
-    </p>
+    <div id="grid">
+      <ol>
+        <li><a href="pr1.html">아이유(IU)</a></li>
+        <li><a href="pr2.html">태연(Taeyeon)</a></li>
+        <li><a href="pr3.html" id="active">정은지(Jeong Eunji)</a></li>
+        <li><a href="pr4.html">홍진영(Hong Jinyoung)</a></li>
+      </ol>
+      <div id="article">
+        <h2>
+          <a
+            href="https://namu.wiki/w/%EC%A0%95%EC%9D%80%EC%A7%80"
+            target="_blank"
+            title="정은지-namuwiki"
+            >정은지</a
+          >
+        </h2>
+        <p>
+          <img src="jeoneunji.jpeg" width="30%">
+        </p>
+        <p>
+            <h3>Songs</h3>
+            <ul>
+              <li><a>하늘바라기 - 2016</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/nzDO6tAB6ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>너란봄 - 2017</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/PWDISJZr7Yc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>어떤가요 - 2018</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/pfQfMpFGA80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+              <li><a>이제 그만 싸우자 - 2014</a><br><iframe width="560" height="315" src="https://www.youtube.com/embed/BIbTM4bZHUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            </ul>
+        </p>
+        </div>
+    </div>
   </body>
 </html>
